@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1.0, width=device-width">
+      <link rel="stylesheet" href="static/styles.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+      <title>FelpApp</title>
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+          <div class="PopUp" onclick="PopUpFunction()"> 
+           <a href="/contact">Contact</a>
+           <a href="/register">Register</a>
+          </div> 
+      </header>
+        <div class="Box1">
+          <Image id="Image1" src="static/mother.webp"/>
+          <p id="Lorem1">LOREM IPSUL DORUUUUUUM, sit amet consectetur adipisicing elit.<br>
+             Earum illo neque voluptate aspernatur porro obcaecati ratione quae modi inventore,<br>
+             tempora temporibus, corrupti qui. Neque fuga rem nam nobis, tempora harum.</p>
+        </div>
+        <div class="Box2">
+          <input id="input" placeholder="E-mail" name='Email'></input>
+          <input id="submit"type="submit"></input>
+        </div>
+        <div class="Box3">
+          <a><Image id="Image2" src="static/image3.jpeg" /></a>
+          <a><Image id="Image2" src="static/image3.jpeg" /></a>
+          <a><Image id="Image2" src="static/image3.jpeg" /></a>
+          <a><Image id="Image2" src="static/image3.jpeg"/></a>
+        </div>
+      <footer>
+         Powered by
+          <span>
+            <Image src="static/vercel.svg" alt="Vercel Logo"/>
+          </span>
+        </footer>
+    </div>
+    <script>
+      function PopUpFunction(){
+        var pop = document.getElementById("");
+        pop.classList.toggle("show");
+      }
+    </script>
+</body>
+</html>
