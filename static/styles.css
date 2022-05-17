@@ -3,24 +3,38 @@ html{
     overflow-x: scroll;
     background-image: url("women.jpg");
     background-size:105% 105%;
-
-    }
+    
+    
+    
+}
+    
 body{
     
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    
+    overflow:hidden;
+    width: 100%;
+    padding: none;
+    position: relative;
+    left: -10px;
 }
 header{
-    background-color: blue;
+    background-color:blue;  
+    height: 50px;
+    
+}
+
+.header1{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+}
+.header2{
+    display:none;
 }
 footer{
     text-align: center;
     padding-top: 30px;
+    
 }
  
 li{
@@ -57,10 +71,15 @@ p{
      text-align: center;
      width: 100%;
      padding: 20px;
-     height: fit-content;
-   
-     
+     height: fit-content;}
+.Bars{
+background-color: skyblue;
+border:none;
+display: block;
+width:40px;
+height:50px;
 }
+
 #submit{
     background-color: blue;
     color:white;
@@ -69,9 +88,13 @@ p{
 #form2{
     display: none;
 }
+#form3{
+    display: none;
+}
 #Image1{
     width: 400px;
     height: 300px;
+    z-index: -1;
 }
 #input{
     height:30px;
@@ -91,15 +114,15 @@ a{
 }
 .open-button {
     
-    color: white;
-    padding: 1% 1%;
     border: none;
     cursor: pointer;
     position:relative;
     background-color: transparent;
-    color: white;
-    width: 90px;
+    text-align: left;
+    color:white;
+    width: 120px;
     font-size: 16px;
+   
     
   }
   
@@ -112,16 +135,25 @@ a{
     border: 3px solid #f1f1f1;
     z-index: 9;
     background-color: blue;
+    
+  }
+  
+  #burgerPopUp{
+      display:none;
+      background-color: blue;
+      z-index: 4;
+      width: fit-content;
+      align-items: center;
   }
   @media only screen and (max-width:600px){
       header{
-        display: block;
-        flex-direction: column;
-        justify-content: none;
-        height:100px;
-        padding-left: 10px;
-          
-
+        height:50px
+         }
+      .header1{
+          display:none;
+      }
+      .header2{
+          display: block;
       }
      
       .Box1{
@@ -145,7 +177,16 @@ a{
           flex-direction: column;
           align-items: center;
       }
-
       
+li{
     
+        display: flex;
+        flex-direction: column;
+}
+.open-button{
+    position: relative;
+    left: -6px;
+    border:none;
+}
+      
 }
