@@ -6,10 +6,12 @@
       <link rel="stylesheet" href="static/styles.css">
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
       <title>FelpApp</title>
+      
     </head>
     <body>
       <div class="container">
         <header>
+          <div class="header1">
           <nav>
             <ul>
              <li><a href="/">Home</a></li>
@@ -31,8 +33,6 @@
                 <button type="button" class= "btn cancel" onclick="closeForm()">Close</button>
               </form>
               
-    
-            
               <form id="form2" action=""method="get">
                  <input type="text"name="name"size="15"maxlength="30" placeholder="Enter your name"/><br>
                  <input type="text"name="username1"size="15"maxlength="30" placeholder="Enter your username"/><br>
@@ -43,6 +43,51 @@
              </form>
             </div>
           </div>
+        </div>
+        <div class="header2">
+          
+        <button class="Bars" onclick="Burger()">
+          <i class="fa fa-bars"></i></button>
+          <div class="burger-popup" id="burgerPopUp">
+            <nav>
+              <ul>
+                 <li><a href="/">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+              </ul>
+              <div>
+                <ul>
+                <li><a href="/contact">Contact</a></li>
+                <li><button class="open-button" onclick="openForm2()">Register</button></li></ul>
+              <div class="form-popup" id="myPopUp2">
+            
+                <form id="form1" action=""method="get">
+                  <input type="text"name="username"size="15"maxlength="30" placeholder="Enter your username"/><br>
+                  <input type="password"name="password"size="15"maxlength="30"placeholder="Enter your password"><br>
+                  <input type="submit"name="login"value="login"><br>
+                  <a href="">Forgot your password?</a>
+                  <hr>
+                  <button type="button" onclick="openRegister2()">Create new account</button>
+                  <button type="button" class= "btn cancel" onclick="closeForm2()">Close</button>
+                </form>
+                
+                <form id="form3" action=""method="get">
+                   <input type="text"name="name"size="15"maxlength="30" placeholder="Enter your name"/><br>
+                   <input type="text"name="username1"size="15"maxlength="30" placeholder="Enter your username"/><br>
+                   <input type="password"name="password1"size="15"maxlength="30"placeholder="Enter password"><br>
+                   <input type="password"name="confirm password"size="15"maxlength="30"placeholder="Confirm password"><br>
+                  <button type="submit">Sign up</button>
+                  
+               </form>
+              </div>
+              </div>
+              </div>
+           </div>
+           
+          </nav>
+        </div>
+        
+        
+        
          
       </header>
       <div class="content">
@@ -69,20 +114,9 @@
             <Image src="static/vercel.svg" alt="Vercel Logo"/>
           </span>
         </footer>
-    </div>
-  
-    <script>
-      function openForm() {
-        document.getElementById("myPopUp").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myPopUp").style.display = "none";
-        document.getElementById("form2").style.display = "none";
-      }
-      function openRegister(){
-        document.getElementById("form2").style.display= "block";
-      }
-      </script>
+    
+      </div>
+    <script src="FelpApp.js">
+    </script>
 </body>
 </html>
