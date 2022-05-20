@@ -89,32 +89,51 @@
             </nav>
 
         </header>
+
         <div class="content">
-            <div class="Box1">
-                <Image id="Image1" src="static/mother.webp" />
-                <p id="Lorem1">LOREM IPSUL DORUUUUUUM, sit amet consectetur adipisicing elit.<br>
-                    Earum illo neque voluptate aspernatur porro obcaecati ratione quae modi inventore,<br>
-                    tempora temporibus, corrupti qui. Neque fuga rem nam nobis, tempora harum.</p>
+            <div class="Box1Q">
+                <h1>Frequently Asked Questions</h1>
             </div>
-            <div class="Box2">
-                <input id="input" placeholder="E-mail" name='Email'></input>
-                <input id="submit" type="submit"></input>
-            </div>
-            <div class="Box3">
-                <a>
-                    <Image id="Image2" src="static/image3.jpeg" />
-                </a>
-                <a>
-                    <Image id="Image2" src="static/image3.jpeg" />
-                </a>
-                <a>
-                    <Image id="Image2" src="static/image3.jpeg" />
-                </a>
-                <a>
-                    <Image id="Image2" src="static/image3.jpeg" />
-                </a>
+            <div class="Box23Q">
+                <div class="Box2Q">
+
+                    <button class="dropButton">FINANCE</button>
+                    <div class="dropMenu">
+                        <a href="">Question 1</a><br>
+                        <a href="">Question 2</a><br>
+                        <a href="">Question 3</a>
+                    </div>
+                    <button class="dropButton">TAXES</button>
+                    <div class="dropMenu">
+                        <a href="">Question 1</a><br>
+                        <a href="">Question 2</a><br>
+                        <a href="">Question 3</a>
+                    </div>
+                    <button class="dropButton">IMMIGRATION</button>
+                    <div class="dropMenu">
+                        <a href="">Question 1</a><br>
+                        <a href="">Question 2</a><br>
+                        <a href="">Question 3</a>
+                    </div>
+                </div>
+
+                <div class="Box3Q">
+                    <button class="question-button" onclick="OpenQuestion()">
+                        <h1>Ask Question</h1>
+                    </button>
+                    <div class="question-popUp" id="myPopUp3">
+                        <form>
+                            <input type="text" id="EmailForm" placeholder="Email" /><br>
+                            <input type="text" id="TopicForm" placeholder="Topic" /><br>
+                            <textarea id="QuestionForm" placeholder="Question"></textarea><br>
+                            <input type="submit" name="Send"><br>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         <footer>
             Powered by
             <span>
@@ -125,6 +144,7 @@
     </div>
     <script src="FelpApp.js">
     </script>
+
 </body>
 
 </html>
